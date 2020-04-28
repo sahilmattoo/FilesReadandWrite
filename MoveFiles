@@ -1,0 +1,19 @@
+def moveToData(path, movetopath):
+    subfolderpaths = []
+    
+    # Save all the hierechy path details
+    for folder in os.walk(path):
+        subfolderpaths.append(folder[0])
+    
+    for eachpath in range(len(subfolderpaths)):
+        folderpath = subfolderpaths[eachpath]
+        #Find List of Directories present in Sub Folder
+        entry = os.listdir(folderpath)
+        for directory in entry:
+            # If dicrectory is a file with extension
+            if '.' in directory:
+                print('its a file')
+                oldfilepath = folderpath+'\\'+directory
+                print(file)
+                newfilepath = movetopath+'\\Data'
+                shutil.copy(oldfilepath, newfilepath)
