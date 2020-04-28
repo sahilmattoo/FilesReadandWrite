@@ -33,9 +33,8 @@ Dataset = pd.DataFrame()
 DataDictionary ={}
 
 #Set the path where all the folders with Docs are present
-path =r'C:\Users\smattoo5\OneDrive - DXC Production\DXC-NLP\Technology_Classification\Vivek\Infrastructure Technology Docs'
-movetopath = r'C:\Users\smattoo5\OneDrive - DXC Production\DXC-NLP\Technology_Classification\Technology_Document_Classification_Pipeline'
-
+path = SET THE PATH FROM WHERE DOCUMENTS HAVE TO BE COPIED
+movetopath = PATH WHERE YOU WANT THE FILES TO BE COPIED
 
 
 def readWord(filename):
