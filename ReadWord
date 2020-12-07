@@ -1,0 +1,21 @@
+!pip install python-docx
+import docx
+
+# open connection to Word Document
+doc = docx.Document(filename)
+# read in each paragraph in file
+result = [p.text for p in doc.paragraphs]
+result
+
+## This will result in all the lines in List Format
+
+
+!pip install docx2python
+from docx2python import docx2python
+# extract docx content
+doc_result = docx2python(filename)
+doc_result.body
+
+## Get in Dataframe
+import pandas as pd
+pd.DataFrame(doc_result.body[1][1:])
